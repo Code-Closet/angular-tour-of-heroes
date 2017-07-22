@@ -1,0 +1,8 @@
+<div class="dropdown">
+<span class="dropdown-name">KPI :</span>
+<select class="btn btn-viq" [(ngModel)]="selectedDropdown" (ngModelChange)="onSelect($event)">
+  <option *ngFor="let item of items" [ngValue]= "item" >
+    <span class="dropdown-text">{{item.name}}</span>
+  </option>
+</select>
+</div>
